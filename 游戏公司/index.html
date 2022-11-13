@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="guanyu.html">关于</a></li>
+                <!-- <li><a href="#">游戏</a></li>
+                <li><a href="#">新闻</a></li> -->
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="news_center">
+                <div class="news_hd">
+                    <ul>
+                        <li class="current"><a href="#">热门</a></li>
+                        <li><a href="#">新闻</a></li>
+                        <li><a href="#">公告</a></li>
+                    </ul>
+                </div>
+                <div class="news_content">
+                    <div class="item">
+                        <ul class="newsList1">
+                            <li><a href="#">11月10日全服不停机更新</a></li>
+                            <li><a href="#">周年庆头像新鲜出炉</a></li>
+                            <li><a href="#">10月30日全服不停服更新</a></li>
+                            <li><a href="#">9月10日全服不停服更新</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul class="newsList2">
+                            <li><a href="#">促进企业文化建设</a></li>
+                            <li><a href="#">周年庆头像新鲜出炉</a></li>
+                            <li><a href="#">赛事主理人计划发布</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul class="newsList3">
+                            <li><a href="#">11月10日全服不停机更新公告</a></li>
+                            <li><a href="#">11月9日外挂专项打击公告</a></li>
+                            <li><a href="#">10月30日体验服更新公告</a></li>
+                            <li><a href="#">9月10日全服不停服更新</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 底部 -->
+  <div class="login-footer">
+    <!-- 版权信息 -->
+    <div class="copyright">
+      <p>
+        <a href="javascript:;">关于我们</a>
+        <a href="javascript:;">帮助中心</a>
+        <a href="javascript:;">售后服务</a>
+        <a href="javascript:;">配送与验收</a>
+        <a href="javascript:;">商务合作</a>
+        <a href="javascript:;">搜索推荐</a>
+        <a href="javascript:;">友情链接</a>
+      </p>
+    </div>
+  </div>
+    <!-- <script src="./js/index.js"></script> -->
+    <script>
+    let lis=document.querySelectorAll('.news_hd li')
+    let items=document.querySelectorAll('.item')
+    for(let i=0;i<lis.length;i++){
+        lis[i].setAttribute('index',i)
+        lis[i].onclick=function(){
+            for(let i=0;i<lis.length;i++){
+                lis[i].className=''
+                items[i].style.display='none'
+            }
+            this.className='news_hd current'
+            items[this.getAttribute('index')].style.display='block'
+        }
+    }
+    </script>
+</body>
+</html>

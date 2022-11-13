@@ -1,0 +1,55 @@
+/* 各个页面相同的样式表：头、尾 */
+
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+    background: rgba(0,0,0,0.3);
+}
+.nav{
+    float: left;
+    margin-left: 40px;
+    height: 70px;
+    
+}
+.nav li{
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+}
+.nav li a{
+    padding-bottom: 7px;
+}
+.nav li a:hover{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+
+}
+.login-footer .copyright {
+    height: 115px;
+    padding-top: 40px;
+    text-align: center;
+    color: #999;
+    font-size: 15px;
+  }
+  
+  .login-footer .copyright p {
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  
+  .login-footer .copyright a {
+    color: #999;
+    line-height: 1;
+    padding: 0 10px 0 6px;
+    border-right: 1px solid #999;
+  }
+  
+  .login-footer .copyright a:last-child {
+    border-right: none;
+  }
